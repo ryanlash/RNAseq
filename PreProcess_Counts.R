@@ -1,6 +1,6 @@
 # Read in the file. Don't set row names yet
 # Note if using R < 4.0.0, set stringsAsFactors = FALSE in read.delim
-data <- read.delim("deliverables/counts/gene_expected_count.annot.txt", row.names = NULL)
+data <- read.delim("C:/Users/Ryan/Downloads/gene_expected_count.annot.txt", row.names = NULL)
 # Deal with genes that don't have annotated gene symbols (external_gene_name)
 # Use ENSEMBL ID if gene symbol not available
 data$external_gene_name <- ifelse(
